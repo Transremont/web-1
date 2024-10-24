@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: auto;
+}
+
+.superior {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    justify-content: space-between; 
+    text-align: center;
+
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+.logo-container {
+    margin-left: 300px;
+}
+
+.menu { 
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 150px;
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+    font-size: 25px;
+}
+
+.menu .nav-item {
+    margin: 0 15px; /* Espaciado entre los elementos de la lista */
+}
+
+.menu .nav-link {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #333; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.menu .nav-link:hover {
+    color: #007BFF; /* Cambia el color al pasar el mouse */
+}
+
+.menu h1 { 
+    margin: 0 40px;
+}
+
+.menu h1:last-child {
+    margin-right: 0;
+}
+/*
+.carrusel {
+    position: relative;
+    max-width: 600px; /* Ajusta el ancho según tus necesidades */
+/*    margin: auto;
+    overflow: hidden; /* Oculta las imágenes que están fuera del contenedor */
+ /*   border: 1px solid #ccc; /* (Opcional) Añadir un borde para visualizar el contenedor */
+ /*   height: 500px;
+}
+
+v.slides {
+    display: flex; /* Permite que las imágenes se alineen en una fila */
+ /*   transition: transform 0.5s ease; /* Agrega una transición suave al cambiar de imagen */
+/*}
+
+/*.slide {
+    min-width: 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
+    /*display: none; /* Oculta todas las imágenes por defecto */
+/*}
+
+.slide.active {
+    display: block; /* Solo muestra la imagen activa */
+/*}
+
+.slide img {
+    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+ /*   height: auto; /* Mantiene la relación de aspecto de la imagen */
+ /*   display: block; /* Elimina el espacio en la parte inferior de la imagen */
+/*}
+*/
+.nosotros {
+    padding: 20px; /* Agrega un poco de padding */
+    text-align: center; /* Centra el texto si lo deseas */
+    height: 400px;
+
+}
+
+.descripcion{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.workers{
+    margin-right: 10%;
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
+   
+    max-width: 400px; /* Establece un ancho máximo para la imagen */
+    margin-top: 2%;
+}
+
+.descripcion p{
+    margin-left: 8%;
+    width: 500px;
+    font-size: 30px;
+    margin-top: 2%;
+
+}
+
+.perfect-circle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 20px; /* Agrega un poco de padding */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas más pequeñas */
+}
+
+.text-circle {
+    width: 500px;
+    text-align: center;
+    margin-right: 18%;
+    font-size: 30px;
+}
+
+.image-circle {
+    max-width: 100%; /* Asegura que la imagen sea responsive */
+    height: auto; /* Mantiene la relación de aspecto */
+    margin-left: 20%;
+    
+}
+
+.image-perfect-circle{
+    height: 300px;
+}
+
+
+.mision-vision{
+    height: 800px;
+    margin-top: 60px;  
+}
+
+.mision{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    
+}
+
+.text-mision{
+    width: 50%;
+    height: 280px;
+    background-color: gray;
+    margin-top: 110px;
+}
+
+.text-mision p{
+    margin-left: 100px;
+    width: 500px;
+    font-size: 20px;
+    margin-top: 90px;
+    text-align: center;
+}
+
+.title-mision{
+    width: 50%;
+    text-align: center;
+    height: 280px;
+    background-color: #6cb9a2;
+    margin-top: 110px;
+}
+
+
+.title-mision h1{
+
+    margin-top: 120px;
+
+}
+
+.vision{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.title-vision{
+    width: 50%;
+    text-align: center;
+    height: 280px;
+    background-color: #6cb9a2;
+   
+}
+
+
+.title-vision h1{
+
+    margin-top: 120px;
+
+}
+
+.text-vision{
+    width: 50%;
+    height: 280px;
+    background-color: gray;
+    
+}
+
+.text-vision p{
+    margin-left: 100px;
+    width: 500px;
+    font-size: 20px;
+    margin-top: 90px;
+    text-align: center;
+}
+
+/* Media Queries para hacer la página responsiva */
+@media (max-width: 1024px) {
+    .logo-container {
+        margin-left: 50px; /* Reduce el margen en pantallas medianas */
+    }
+
+    .menu {
+        margin-right: 50px; /* Reduce el margen en pantallas medianas */
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .vision {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .title-vision {
+        width: 90%; /* Cambia el ancho a 90% para pantallas pequeñas */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin-bottom: 20px; /* Agrega un margen inferior para separación */
+    }
+
+    .title-vision h1 {
+        margin-top: 20px; /* Ajusta el margen superior */
+        font-size: 24px; /* Ajusta el tamaño de la fuente del título */
+    }
+
+    .text-vision {
+        width: 90%; /* Cambia el ancho a 90% para pantallas pequeñas */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+    }
+
+    .text-vision p {
+        margin-left: 0; /* Elimina el margen izquierdo */
+        width: 100%; /* Cambia el ancho a 100% para mejor adaptabilidad */
+        font-size: 18px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+        margin-top: 10px; /* Ajusta el margen superior */
+        text-align: center; /* Asegura que el texto esté centrado */
+    }
+   
+    .mision-vision {
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin-top: 30px; /* Reduce el margen superior en pantallas pequeñas */
+    }
+
+    .mision {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .text-mision {
+        width: 90%; /* Cambia el ancho a 90% para pantallas pequeñas */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin-top: 20px; /* Reduce el margen superior */
+        
+    }
+
+    .text-mision p {
+        margin-left: 0; /* Elimina el margen izquierdo */
+        width: 100%; /* Cambia el ancho a 100% para mejor adaptabilidad */
+        font-size: 18px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+        text-align: center;
+        margin-top: 10px; /* Ajusta el margen superior */
+    }
+
+    .title-mision {
+        width: 90%; /* Cambia el ancho a 90% para pantallas pequeñas */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin-top: 20px; /* Reduce el margen superior */
+    }
+
+    .title-mision h1 {
+        margin-top: 20px; /* Ajusta el margen superior */
+        font-size: 24px; /* Ajusta el tamaño de la fuente del título */
+    }
+
+
+    .perfect-circle {
+        margin-top: 50PX;
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .text-circle {
+        margin-top: 20px;
+        width: 90%; /* Cambia el ancho a 90% para pantallas pequeñas */
+        margin-right: 0; /* Elimina el margen derecho */
+        font-size: 24px; /* Ajusta el tamaño de la fuente */
+        margin-bottom: 20px; /* Agrega un margen inferior para separación */
+    }
+
+    .image-circle {
+        margin-left: 0; /* Elimina el margen izquierdo */
+        text-align: center; /* Centra la imagen */
+    }
+
+    .image-perfect-circle {
+        max-width: 90%; /* Asegura que la imagen no exceda el ancho del contenedor */
+        height: auto; /* Mantiene la relación de aspecto */
+    }
+
+
+    .descripcion {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .descripcion p {
+        width: 90%; /* Ancho del párrafo en pantallas pequeñas */
+        font-size: 18px; /* Ajusta el tamaño de la fuente */
+        margin: 20px 0; /* Espaciado vertical */
+    }
+
+    .workers {
+        width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
+        height: auto; /* Mantiene la relación de aspecto */
+        margin: 20px 0; /* Espaciado vertical */
+    }
+
+    .superior {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo-container {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .menu {
+        justify-content: center;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .menu h1 {
+        margin: 5px;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    .menu h1 {
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
+    .superior {
+        padding: 5px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .descripcion p {
+        font-size: 16px; /* Ajusta el tamaño del texto del párrafo */
+    }
+
+    .tittle-nosotros h1 {
+        font-size: 24px; /* Ajusta el tamaño del título */
+    }
+
+    .text-circle {
+        font-size: 18px; /* Ajusta el tamaño de la fuente para pantallas muy pequeñas */
+    }
+
+    .image-perfect-circle {
+        max-height: 200px; /* Establece un alto máximo para la imagen en pantallas muy pequeñas */
+    }
+
+    .text-mision p {
+        font-size: 16px; /* Ajusta aún más el tamaño de la fuente para pantallas muy pequeñas */
+    }
+
+    .title-mision h1 {
+        font-size: 20px; /* Ajusta aún más el tamaño del título */
+    }
+
+    .text-vision p {
+        font-size: 16px; /* Ajusta aún más el tamaño de la fuente para pantallas muy pequeñas */
+    }
+
+    .title-vision h1 {
+        font-size: 20px; /* Ajusta aún más el tamaño del título */
+    }
+
+}
